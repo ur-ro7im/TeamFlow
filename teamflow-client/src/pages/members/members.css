@@ -1,0 +1,51 @@
+.members-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+.panel {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e8ebf2;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(20, 30, 50, 0.04);
+}
+
+.panel + .panel {
+  margin-top: 16px;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 17px;
+}
+
+.storage-bar {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #eef0f4;
+}
+
+.storage-bar > div {
+  height: 100%;
+  border-radius: 999px;
+  background: #4f46e5;
+}
+
+.storage-bar.is-full > div {
+  background: #dc2626;
+}
+
+.invite-result {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .members-layout {
+    grid-template-columns: 1fr;
+  }
+}

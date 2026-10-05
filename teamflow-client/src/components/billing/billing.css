@@ -1,0 +1,94 @@
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #e8ebf2;
+  border-radius: 16px;
+}
+
+.plan-card.is-selected {
+  border-color: #4f46e5;
+  box-shadow: 0 8px 28px rgba(79, 70, 229, 0.15);
+}
+
+.plan-card.is-current {
+  border-color: #12b76a;
+}
+
+.plan-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.plan-price strong {
+  font-size: 28px;
+}
+
+.plan-price span {
+  color: #667085;
+  font-size: 14px;
+}
+
+.plan-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #475467;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.plan-features li::before {
+  content: "✓ ";
+  color: #12b76a;
+  font-weight: 700;
+}
+
+.plan-card .primary-button,
+.plan-card .secondary-button {
+  margin-top: auto;
+  width: 100%;
+}
+
+.plan-ribbon {
+  position: absolute;
+  top: -11px;
+  right: 16px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.usage-row {
+  margin-bottom: 14px;
+}
+
+.usage-row-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.card-note {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fffaeb;
+  color: #93370d;
+  font-size: 13px;
+  line-height: 1.5;
+}
